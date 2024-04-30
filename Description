@@ -1,0 +1,44 @@
+1. geo_level_1_id, geo_level_2_id, geo_level_3_id(type: int): khu vực địa lý, trong đó xây dựng tồn tại, từ lớn nhất (cấp 1) với
+hầu hết các cụm tiểu vùng (cấp 3). Giá trị có thể có: cấp 1: 0-30, cấp 2: 0-1427, cấp 3: 0-12567.
+2. count_floors_pre_eq (type: int): số tầng trong tòa nhà trước trận động đất.
+3. age (type: int): tuổi của tòa nhà tính bằng năm (đã được normalized)
+4. area_percentage (type: int): diện tích tòa nhà (đã được normalized)
+5. height_percentage (type: int): chiều cao tòa nhà (đã được normalized)
+6. land_surface_condition(type: categorical): tình trạng bề mặt của khu đất nơi công trình được xây dựng. Giá trị: n, o, t.
+7. foundation_type(type: categorical): cấu trúc móng được sử dụng trong khi xây dựng. Giá trị có thể: h, i, r, u, w.
+8. roof_type(type: categorical): cấu trúc mái được sử dụng trong khi xây dựng. Giá trị: n, q, x.
+9. ground_floor_type(type: categorical): cấu trúc ở tầng trệt. Giá trị: f, m, v, x, z.
+10. other_floor_type(type: categorical): cấu trúc của các tầng bên trên tầng trệt (trừ mái). Giá trị: j, q, s, x.
+11. position(type: categorical): vị trí của tòa nhà. Giá trị: j, o, s, t.
+12. plan_configuration(type: categorical): kế hoạch xây dựng. Giá trị: a, c, d, f, m, n, o, q, s, u.
+13. has_superstructure_adobe_mud (type: binary): các tầng của tòa nhà có phải được làm bằng gạch bùn hay không.
+14. has_superstructure_mud_mortar_stone (type: binary): các tầng của tòa nhà có phải được làm bằng đá và vữa bùn hay
+không.
+15. has_superstructure_stone_flag (type: binary): các tầng của tòa nhà có phải được làm bằng đá hay không.
+16. has_superstructure_cement_mortar_stone (type: binary): các tầng của tòa nhà có phải được làm bằng vữa xi măng và
+đá hay không.
+17. has_superstructure_mud_mortar_brick (type: binary): cho biết các tầng cao có được làm bằng vữa bùn hay không.
+18. has_superstructure_cement_mortar_brick (type: binary): cho biết các tầng cao có được làm bằng vữa xi măng - gạch hay
+không.
+19. has_superstructure_timber (type: binary): cho biết các tầng cao có được làm bằng gỗ hay không.
+20. has_superstructure_bamboo (type: binary): cho biết các tầng cao có được làm bằng tre hay không.
+21. has_superstructure_rc_non_engineered (type: binary): cho biết kết các tầng cao có được làm bằng bê tông cốt thép và
+không được thiết kế hay không.
+22. has_superstructure_rc_engineered (type: binary): cho biết liệu các tầng cao có được làm bằng bê tông cốt thép và được
+thiết kế hay không
+23. has_superstructure_other (type: binary): cho biết liệu các tầng cao có được làm bằng bất kỳ vật liệu nào khác.
+24. legal_ownership_status(type: categorical): tình trạng hợp pháp của đất nơi xây dựng công trình. Giá trị: a, r, v, w.
+
+25. count_families (type: int): số lượng gia đình sống trong tòa nhà.
+26. has_secondary_use (type: binary): cho biết tòa nhà có được sử dụng cho bất kỳ mục đích phụ nào hay không.
+27. has_secondary_use_agriculture (type: binary): cho biết tòa nhà có được sử dụng cho mục đích nông nghiệp hay không.
+28. has_secondary_use_hotel (type: binary): cho biết tòa nhà có được sử dụng làm khách sạn hay không.
+29. has_secondary_use_rental (type: binary): cho biết tòa nhà có được sử dụng cho mục đích cho thuê hay không.
+30. has_secondary_use_institution (type: binary): cho biết tòa nhà có được sử dụng làm địa điểm của bất kỳ tổ chức nào hay
+không.
+31. has_secondary_use_school (type: binary): cho biết tòa nhà có được sử dụng làm trường học hay không.
+32. has_secondary_use_industry (type: binary): cho biết tòa nhà có được sử dụng cho mục đích công nghiệp hay không.
+33. has_secondary_use_health_post (type: binary): cho biết tòa nhà có được sử dụng làm trạm y tế - bệnh viện hay không.
+34. has_secondary_use_gov_office (type: binary): cho biết liệu tòa nhà có được sử dụng bởi văn phòng chính phủ hay không.
+35. has_secondary_use_use_police (type: binary): cho biết tòa nhà có được sử dụng làm đồn cảnh sát hay không.
+36. has_secondary_use_other (type: binary): cho biết liệu tòa nhà có được sử dụng cho các mục đích khác.
